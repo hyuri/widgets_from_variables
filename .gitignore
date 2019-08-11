@@ -2,6 +2,7 @@
 *.sublime-workspace
 
 tests/
+screenshot.png
 
 *.py[co]
 __pycache__/
