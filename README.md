@@ -8,6 +8,8 @@ It's just something I've been wanting to do for some time but never got the time
 
 ### TODO:
 ...
+- Rethink the variable naming format(currently, it only generates widgets for variables prefixed by "UI_". This is by design, and the rationale is that you might not want all your variables showing up in the GUI, so you explicitly tell which ones you do want, but the ideal scenario would be that you don't even have to do anything and your variables just work. Maybe only global variables with no leading underscores should show up;
+- Improve the design of how variables are extracted;
 - Expand the widget set to include all kinds of type-widget mappings, like color wheels for color types/classes/objects;
 - Improve the design of the type-widget mapping system;
 - Add button, at the bottom of the stack, to load/add new script;
