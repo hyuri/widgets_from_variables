@@ -170,20 +170,23 @@ class Panel(QWidget):
 	header_font.setBold(True)
 	header_font.setPointSize(10)
 
-	def __init__(self, name):
+	def __init__(self, name, script):
 		QWidget.__init__(self)
+
+		self.name = name
+		self.script = script
 
 		self.layout = QVBoxLayout()
 		self.layout.setAlignment(Qt.AlignTop)
 		self.layout.setMargin(0)
 
-		self.header = QLabel(name)
+		self.header = QLabel(self.name)
 		self.header.setFont(self.header_font)
 		self.header.setAlignment(Qt.AlignLeft)
 		self.header.setObjectName("header")
 		self.layout.addWidget(self.header)
 
-		self.grid = grid_layout_build(vars(code))
+		self.grid = grid_layout_build(vars(self.script))
 
 		self.layout.addLayout(self.grid)
 		self.setLayout(self.layout)
@@ -206,7 +209,7 @@ if __name__ == "__main__":
 	
 	# Panels
 	for i in range(1):
-		panel = Panel(f"Panel {i + 1}")
+		panel = Panel(f"Panel {i + 1}", code)
 		layout.addWidget(panel)
 
 	main_window.setLayout(layout)
