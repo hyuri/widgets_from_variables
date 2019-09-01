@@ -3,7 +3,7 @@ Automatically generate widgets from variables, based on their types.
 
 ![screenshot](https://user-images.githubusercontent.com/18584014/62830911-3d346d00-bbed-11e9-925b-62d7fbe7b901.png)
 
-It's still in a prototype phase and, right now, the variables in the script are not getting updated if you change the corresponding values in the widget(no binding happening). Also, script is not getting aexec and its not doing anything
+It's still in a prototype phase and, right now, the variables in the script are not getting updated if you change the corresponding values in the widget(no binding happening). Also, script is not getting exec and it's not doing anything.
 It's just something I've been wanting to do for some time but never got the time to do it. Plus, it was an opportunity for me to get my feet wet with Qt(PySide2), and, in the end, it's also going to be very useful for future utilities that myself—or anyone, now—might write.
 
 ### TODO(Incomplete):
